@@ -1,0 +1,31 @@
+<div class="jumbotron">
+  <h1 class="display-4">Task 5</h1>
+  <p class="lead">Communication between components</p>
+  <hr class="my-4">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"> Create a new component Recipes.</li>
+    <li class="list-group-item"> Create a Recipe model with the following properties: id(number), name (string),
+      description (string), difficulty (string), estimatedTime (number) and ingredients (string[]). Desciption property
+      is optional.</li>
+    <li class="list-group-item"> Create a Recipe component (child of Recipes)</li>
+    <li class="list-group-item"> Create recipes property in the parent</li>
+    <li class="list-group-item"> Display the recipes in the Recipe component in some kind of card (sending each recipe
+      data from parent to children).</li>
+    <li class="list-group-item"> Add near (or below) each recipe, an input and a button 'Add ingredient'. Update the
+      recipes list with the new ingredient of the recipe (by emitting the recipe, its ingredients of just the new
+      ingredient).</li>
+    <li class="list-group-item"> Create a new component CreateRecipe (child of Recipes) an add a 'Add recipe' button and
+      emit a new recipe to the Recipes component. (you can hardcode a random recipe).</li>
+  </ul>
+  <a class="btn btn-primary btn-lg" href="https://angular.io/guide/two-way-binding" target="_blank" role="button"
+    style="margin-top: 2rem; margin-bottom: 0rem;">Learn
+    more</a>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h3 class="mt-3 text-center">Welcome to Recipes App</h3>
+      <app-recipes></app-recipes>
+    </div>
+  </div>
+</div>
